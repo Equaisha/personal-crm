@@ -1,4 +1,14 @@
-// Array to store contacts
+function handleAddContact() {
+  const name = document.getElementById("nameInput").value;
+  const role = document.getElementById("roleInput").value;
+
+  if (!name || !role) return;
+
+  addContact(name, role);
+
+  document.getElementById("nameInput").value = "";
+  document.getElementById("roleInput").value = "";
+}// Array to store contacts
 let contacts = [];
 
 // Load contacts from localStorage (if any exist)

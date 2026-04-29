@@ -1,3 +1,4 @@
+console.log("script is connected");
 function handleAddContact() {
   const name = document.getElementById("nameInput").value;
   const role = document.getElementById("roleInput").value;
